@@ -54,6 +54,7 @@ import { InputJugadoresComponent } from './componentes/input-jugadores/input-jug
 import { SexoPipe } from './pipes/sexo.pipe';
 import { PieDePaginaComponent } from './componentes/pie-de-pagina/pie-de-pagina.component';
 import { SimonComponent } from './componentes/simon/simon.component';
+import { AnagramaComponent } from './componentes/anagrama/anagrama.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,8 @@ import { SimonComponent } from './componentes/simon/simon.component';
     InputJugadoresComponent,
     SexoPipe,
     PieDePaginaComponent,
-    SimonComponent
+    SimonComponent,
+    AnagramaComponent
   ],
   imports: [
     BrowserModule,
