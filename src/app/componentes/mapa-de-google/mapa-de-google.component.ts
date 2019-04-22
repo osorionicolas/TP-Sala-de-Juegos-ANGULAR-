@@ -14,17 +14,15 @@ export class MapaDeGoogleComponent implements OnInit {
    
 
 
-
   constructor() { }
   
   ngOnInit() {
   }
 
 
-  
+  mapClicked(event){
 
-
-  
+  }
 
 }
 
