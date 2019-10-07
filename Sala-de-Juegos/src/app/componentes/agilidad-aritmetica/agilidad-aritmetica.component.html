@@ -1,0 +1,50 @@
+<form name="juego">
+  <div class="container">
+    <div class="cardGame">
+      <h1>Agilidad Aritmética</h1>
+
+      <div class="row">
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <ul>
+            <li>
+              Primer número: <input [(ngModel)]="nuevoJuego.primerNumero" name="primerNumero" type="text"
+                class="form-control" readonly />
+
+            </li>
+            <li>
+              Operador: <input [(ngModel)]="nuevoJuego.operador" name="operador" type="text" class="form-control"
+                readonly />
+
+            </li>
+            <li>
+              Segundo número: <input [(ngModel)]="nuevoJuego.segundoNumero" name="segundoNumero" type="text"
+                class="form-control" readonly />
+
+            </li>
+            <li>
+              Respuesta: <input id="inputNumero" [(ngModel)]="nuevoJuego.numeroIngresado" [disabled]="ocultarVerificar"
+                placeholder="Ingrese un número" name="numeroIngresado" type="number" class="form-control" />
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-4"></div>
+
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <button [hidden]="!ocultarVerificar" type="button" class="btn btn-secondary"
+            (click)="NuevoJuego()">Jugar</button>
+          <button [hidden]="ocultarVerificar" (click)="Verificar()" type="button" class="btn btn-secondary">Verificación
+            en
+            {{Tiempo}}</button>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+    </div>
+    <button id="btnSalir" type="button" class="float-right mt-3 btn btn-secondary" (click)="salir()">Salir</button>
+  </div>
+</form>

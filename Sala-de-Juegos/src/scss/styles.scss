@@ -1,0 +1,22 @@
+@import "variables";
+@import "animated.css";
+
+.color_primary {
+    color: $primary;
+
+    &:hover {
+        color: $light-primary;
+    }
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.btn-primary {
+    background-color: $primary !important;
+}
+
+.btn-secondary {
+    background-color: $black !important;
+    color: $white;
+}

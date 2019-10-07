@@ -1,0 +1,62 @@
+@import "src/scss/variables";
+@import "src/scss/comp";
+
+#mainNav {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  background-color: $black;
+  .navbar-brand {
+    color: $white;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .navbar-nav {
+    margin-top: 1rem;
+    li.nav-item {
+      a.nav-link {
+        color: $white;
+        &:hover {
+          color: $primary;
+        }
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+  }
+}
+@include media-breakpoint-up(lg) {
+  #mainNav {
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    .navbar-brand {
+      font-size: 1.75em;
+      transition: font-size 0.3s;
+      &:hover {
+        font-size: 1.8em;
+      }
+    }
+    .navbar-nav {
+      margin-top: 0;
+    }
+  }
+}
+
+#btnMenuToggle {
+  background-color: $primary;
+  &:focus {
+    outline: none;
+  }
+}
+
+.user-img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(0,0,0,.05);
+}

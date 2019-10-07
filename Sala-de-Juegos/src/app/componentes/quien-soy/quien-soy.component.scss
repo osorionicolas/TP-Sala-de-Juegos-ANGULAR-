@@ -1,0 +1,71 @@
+@import "src/scss/variables";
+@import "src/scss/comp";
+
+.imagenDeQuienSoy{
+    width: 100%;
+}
+
+body {
+    background-color: LavenderBlush;
+    color: Teal;
+    font-size: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  /* grid styles */
+  
+  .container {
+    --columns: 12; /* number of columns in the grid system */
+    // max-width: 960px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 100%;    
+    border: LavenderBlush 2px solid;
+    border-radius: 8px;
+    padding: 30px;
+  }
+  
+  .margin {margin-bottom: 45px;}
+
+  /* sections */
+  
+  .header {
+    background-color:$primary;
+    --width: 12;
+    // height: 8rem;
+  }
+  
+  .content {
+    background-color:$secondary;
+    color: $white;
+    --width: 8;
+    // height: 64rem;
+  }
+  
+  .sidebar {
+    background-color:$black;
+    color: $white;
+    --width: 4;
+  }
+
+  .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid fade-out($white, 0.8);
+  }
+
+  .navbar-brand {
+      text-align: center;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }

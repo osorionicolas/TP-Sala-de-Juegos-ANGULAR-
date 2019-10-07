@@ -1,0 +1,31 @@
+@import "src/scss/variables";
+
+table {
+  width: 100%;
+  background-color: $primary;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+.user-img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(0,0,0,.05);
+}
+
+td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+  color: $white;
+  font-size: large;
+}
+
+.no-resultados {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}

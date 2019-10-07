@@ -1,5 +1,3 @@
-# TP-Sala-de-Juegos-ANGULAR-
-Trabajo práctico obligatorio para la promoción directa
+Bienvenidos a la Sala de Juegos
 
-# https://octaviovillegas.github.io/TP-Sala-de-Juegos-ANGULAR-/.
-
+Trabajo práctico de carácter obligatorio para la promoción de la cursada de Laboratorio IV de la UTN.

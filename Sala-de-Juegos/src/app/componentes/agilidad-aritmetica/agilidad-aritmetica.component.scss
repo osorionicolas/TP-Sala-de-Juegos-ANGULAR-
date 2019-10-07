@@ -1,0 +1,16 @@
+@import "src/scss/variables";
+
+.container {
+    padding: 5%;
+}
+
+.cardGame {
+    background-color: $primary;
+    text-align: center; 
+    padding: 5rem;
+    border-radius: 25px;
+}
+
+dl, ol, ul {
+    list-style-type: none;
+  }
