@@ -16,7 +16,7 @@ import { SimonComponent } from './componentes/simon/simon.component';
 const routes: Routes = [
   { path: '', component: MenuComponent },
   { path: 'logearse', component: LoginComponent },
-  { path: 'QuienSoy', component: QuienSoyComponent },
+  { path: 'quiensoy', component: QuienSoyComponent },
   { path: 'registrarse', component: RegistroComponent },
   { path: 'jugadores', component: ListaUsuariosComponent },
   { path: 'resultados', component: ListaPuntuacionComponent },
